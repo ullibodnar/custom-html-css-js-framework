@@ -6,6 +6,7 @@ body {
   margin: 0;
 }
 
+/* Crappy basic header as of now */
 .header {
   width: 100%;
 
@@ -28,6 +29,7 @@ body {
   color: #E5E5E5;
 }
 
+/* Normal hero unit stylin' */
 .hero-unit {
   margin-left: 20%;
   margin-right: auto;
@@ -35,6 +37,7 @@ body {
 
 }
 
+/* Typography styles */
 h1, h2, h3, h4, h5, h6{
   font-weight: 500;
   width: 100;
@@ -86,7 +89,7 @@ p.weak {
   color: #B4B4B4;
 }
 
-
+/* Seperate sections */
 .section-header {
   border-bottom: 1px solid #E1E3E6;
   width: 100%
@@ -120,16 +123,22 @@ section {
 }
 
 /* This is to highlight code examples */
+/* Less than and greater than */
 span.tg {
   color: #86BCFF;
 }
 
+/* Options */
 span.op {
   color: #AF9EFF;
 }
+
+/* Quotation content */
 span.q {
   color: #9EFF1D;
 }
+
+/* Text */
 span.txt {
   color: #B9BDAB;
 }
@@ -137,6 +146,7 @@ span.txt {
 pre {
   margin: 0px 0px 0px -25px;
 }
+
 
 code {
   font-family: sans-serif;
