@@ -2,10 +2,22 @@ $(document).ready(function(){
     $(window).bind('scroll', function() {
     var navHeight = 80;
       if ($(window).scrollTop() > navHeight) {
-        $('ul.page-navigation').addClass('page-navigation-fixed');
+        $('div.page-navigation').addClass('page-navigation-fixed');
+        $('div.hero-unit').addClass('hero-unit-fixed');
       }
       else {
-        $('ul.page-navigation').removeClass('page-navigation-fixed');
+        $('div.page-navigation').removeClass('page-navigation-fixed');
+        $('div.hero-unit').removeClass('hero-unit-fixed');
       }
    });
+   $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing');
+	});
  });

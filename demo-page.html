@@ -12,7 +12,7 @@
   <!-- code highlighting -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
   <script>
-    hljs.initHighlightingOnLoad();
+  hljs.initHighlightingOnLoad();
   </script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
@@ -21,18 +21,19 @@
   <div class="header header-normal">
     <h1>Documentation for Ulli's Custom Bootstrap</h1>
   </div>
-  <ul class="page-navigation">
-    <a href="#typography">Typography</a>
-    <ul>
-      <li><a href="#headings">Headings</a></li>
+  <div class="page-navigation">
+    <ul class="page-navigation-list">
+      <a href="#typography">Typography</a>
+      <ul>
+        <li><a href="#headings">Headings</a></li>
+      </ul>
+      <a href="#buttons">Buttons</a>
+      <ul>
+        <li><a href="#rounded-buttons">Rounded</a></li>
+        <li><a href="#square-buttons">Square</a></li>
+      </ul>
     </ul>
-    <a href="#buttons">Buttons</a>
-    <ul>
-      <li><a href="#rounded-buttons">Rounded</a></li>
-      <li><a href="#square-buttons">Square</a></li>
-    </ul>
-
-  </ul>
+  </div>
   <div class="hero-unit">
 
     <section id="typography">
@@ -41,119 +42,119 @@
         <h3>Headings</h3>
 
         <p>You can add a normal heading with <code class="inline-code">&lt;h1&gt;</code>...<code class="inline-code">&lt;h6&gt;</code>.
-        <div class="showcase">
-          <div class="example-box">
-            EXAMPLE
-          </div>
-          <h1>h1 &bull; Example Header<p class="weak">2.5em / 40px*</p></h1>
-
-          <h2>h2 &bull; Example Header<p class="weak">2.00em / 32px*</p></h2>
-
-          <h3>h3 &bull; Example Header<p class="weak">1.50em / 24px*</p></h3>
-
-          <h4>h4 &bull; Example Header<p class="weak">1.25em / 20px*</p></h4>
-
-          <h5>h5 &bull; Example Header<p class="weak">1.00em / 16px*</p></h5>
-
-          <h6>h6 &bull; Example Header<p class="weak">0.875em / 14px*</p></h6>
-
-        </div>
-        <p class="weak">*Conversions based on 16px browser default size</p>
-        <div class="code-sample">
-          <div class="example-box-inverted">
-            Code
-          </div>
-          <pre>
-            <code class="language-html">
-              <span class="tg">&lt;h1&gt;</span><span class="txt">h1 Example Header</span><span class="tg">&lt;p </span><span class="op">class=</span><span class="q">"weak"</span><span class="tg">&gt;</span><span class="txt">2.5em/40px*</span><span class="tg">&lt;/p&gt;</span><span class="tg">&lt;/h1&gt;</span>
-              <span class="txt">...</span>
-              <span class="tg">&lt;h6&gt;</span><span class="txt">h6 Example Header</span><span class="tg">&lt;p </span><span class="op">class=</span><span class="q">"weak"</span><span class="tg">&gt;</span><span class="txt">0.875em/14px*</span><span class="tg">&lt;/p&gt;</span><span class="tg">&lt;/h6&gt;</span>
-            </code>
-          </pre>
-        </div>
-        <p>You can add a secondary header to any heading by using the <code class="inline-code">&lt;small&gt;</code> tag.
-          Or, you can add the <code class="inline-code">.weak</code> class to any <code class="inline-code">&lt;p&gt;</code>
-          tag. The text in the second option is a fixed size as seen in the example above.</p>
-        <div class="showcase">
-          <div class="example-box">
-            EXAMPLE
-          </div>
-          <h1>h1 &bull; Example Header<small class="weak">Sub Header</small></h1>
-
-          <h2>h2 &bull; Example Header<small class="weak">Sub Header</small></h2>
-
-          <h3>h3 &bull; Example Header<small class="weak">Sub Header</small></h3>
-
-          <h4>h4 &bull; Example Header<small class="weak">Sub Header</small></h4>
-
-          <h5>h5 &bull; Example Header<small class="weak">Sub Header</small></h5>
-
-          <h6>h6 &bull; Example Header<small class="weak">Sub Header</small></h6>
-        </div>
-      </section>
-    </section>
-    <section id="buttons">
-      <div class="buttons">
-        <h2 class="section-header">Buttons</h2>
-        <p>Custom ready made styled buttons for quick access.</p>
-        <p>Add <code class="inline-code">btn rnd-btn</code> or <code class="inline-code">btn sqr-btn</code> to the buttons class.</p>
-        <section id="rounded-buttons">
-          <div class="rounded-buttons">
-            <h3>Rounded Buttons</h3>
-            <div class="showcase">
-              <div class="example-box">
-                EXAMPLE
-              </div>
-              <button type="button" class="btn rnd-btn normal">Normal</button>
-              <button type="button" class="btn rnd-btn success">Success</button>
-              <button type="button" class="btn rnd-btn warning">Warning</button>
-              <button type="button" class="btn rnd-btn error">Error</button>
+          <div class="showcase">
+            <div class="example-box">
+              EXAMPLE
             </div>
+            <h1>h1 &bull; Example Header<p class="weak">2.5em / 40px*</p></h1>
+
+            <h2>h2 &bull; Example Header<p class="weak">2.00em / 32px*</p></h2>
+
+            <h3>h3 &bull; Example Header<p class="weak">1.50em / 24px*</p></h3>
+
+            <h4>h4 &bull; Example Header<p class="weak">1.25em / 20px*</p></h4>
+
+            <h5>h5 &bull; Example Header<p class="weak">1.00em / 16px*</p></h5>
+
+            <h6>h6 &bull; Example Header<p class="weak">0.875em / 14px*</p></h6>
+
           </div>
+          <p class="weak">*Conversions based on 16px browser default size</p>
           <div class="code-sample">
             <div class="example-box-inverted">
               Code
             </div>
             <pre>
               <code class="language-html">
-              <span class="tg">&lt;button </span><span class="op">type=</span><span class="q">"button"</span><span class="op"> class=</span><span class="q">"btn rnd-btn normal"</span><span class="tg">&gt;</span><span class="txt">Normal</span><span class="tg">&lt;/button&gt;&lt;/a&gt;</span>
+                <span class="tg">&lt;h1&gt;</span><span class="txt">h1 Example Header</span><span class="tg">&lt;p </span><span class="op">class=</span><span class="q">"weak"</span><span class="tg">&gt;</span><span class="txt">2.5em/40px*</span><span class="tg">&lt;/p&gt;</span><span class="tg">&lt;/h1&gt;</span>
                 <span class="txt">...</span>
-              <span class="tg">&lt;button </span><span class="op">type=</span><span class="q">"button"</span><span class="op"> class=</span><span class="q">"btn rnd-btn error"</span><span class="tg">&gt;</span><span class="txt">Error</span><span class="tg">&lt;/button&gt;&lt;/a&gt;</span>
+                <span class="tg">&lt;h6&gt;</span><span class="txt">h6 Example Header</span><span class="tg">&lt;p </span><span class="op">class=</span><span class="q">"weak"</span><span class="tg">&gt;</span><span class="txt">0.875em/14px*</span><span class="tg">&lt;/p&gt;</span><span class="tg">&lt;/h6&gt;</span>
               </code>
             </pre>
           </div>
+          <p>You can add a secondary header to any heading by using the <code class="inline-code">&lt;small&gt;</code> tag.
+            Or, you can add the <code class="inline-code">.weak</code> class to any <code class="inline-code">&lt;p&gt;</code>
+            tag. The text in the second option is a fixed size as seen in the example above.</p>
+            <div class="showcase">
+              <div class="example-box">
+                EXAMPLE
+              </div>
+              <h1>h1 &bull; Example Header<small class="weak">Sub Header</small></h1>
+
+              <h2>h2 &bull; Example Header<small class="weak">Sub Header</small></h2>
+
+              <h3>h3 &bull; Example Header<small class="weak">Sub Header</small></h3>
+
+              <h4>h4 &bull; Example Header<small class="weak">Sub Header</small></h4>
+
+              <h5>h5 &bull; Example Header<small class="weak">Sub Header</small></h5>
+
+              <h6>h6 &bull; Example Header<small class="weak">Sub Header</small></h6>
+            </div>
+          </section>
         </section>
-        <section id="square-buttons">
-          <div class="square-buttons">
-            <h3>Square Buttons</h3>
-            <div class="showcase">
-              <div class="example-box">
-                EXAMPLE
+        <section id="buttons">
+          <div class="buttons">
+            <h2 class="section-header">Buttons</h2>
+            <p>Custom ready made styled buttons for quick access.</p>
+            <p>Add <code class="inline-code">btn rnd-btn</code> or <code class="inline-code">btn sqr-btn</code> to the buttons class.</p>
+            <section id="rounded-buttons">
+              <div class="rounded-buttons">
+                <h3>Rounded Buttons</h3>
+                <div class="showcase">
+                  <div class="example-box">
+                    EXAMPLE
+                  </div>
+                  <button type="button" class="btn rnd-btn normal">Normal</button>
+                  <button type="button" class="btn rnd-btn success">Success</button>
+                  <button type="button" class="btn rnd-btn warning">Warning</button>
+                  <button type="button" class="btn rnd-btn error">Error</button>
+                </div>
               </div>
-              <button class="btn sqr-btn normal">Normal</button>
-              <button class="btn sqr-btn success">Success</button>
-              <button class="btn sqr-btn warning">Warning</button>
-              <button class="btn sqr-btn error">Error</button>
-            </div>
-          </div>
-          <div class="code-sample">
-            <div class="example-box-inverted">
-              Code
-            </div>
-            <pre>
-              <code class="language-html">
-                <span class="tg">&lt;button </span><span class="op">type=</span><span class="q">"button"</span><span class="op"> class=</span><span class="q">"btn sqr-btn normal"</span><span class="tg">&gt;</span><span class="txt">Normal</span><span class="tg">&lt;/button&gt;&lt;/a&gt;</span>
-                <span class="txt">...</span>
-                <span class="tg">&lt;button </span><span class="op">type=</span><span class="q">"button"</span><span class="op"> class=</span><span class="q">"btn sqr-btn error"</span><span class="tg">&gt;</span><span class="txt">Error</span><span class="tg">&lt;/button&gt;&lt;/a&gt;</span>
-              </code>
-            </pre>
+              <div class="code-sample">
+                <div class="example-box-inverted">
+                  Code
+                </div>
+                <pre>
+                  <code class="language-html">
+                    <span class="tg">&lt;button </span><span class="op">type=</span><span class="q">"button"</span><span class="op"> class=</span><span class="q">"btn rnd-btn normal"</span><span class="tg">&gt;</span><span class="txt">Normal</span><span class="tg">&lt;/button&gt;&lt;/a&gt;</span>
+                    <span class="txt">...</span>
+                    <span class="tg">&lt;button </span><span class="op">type=</span><span class="q">"button"</span><span class="op"> class=</span><span class="q">"btn rnd-btn error"</span><span class="tg">&gt;</span><span class="txt">Error</span><span class="tg">&lt;/button&gt;&lt;/a&gt;</span>
+                  </code>
+                </pre>
+              </div>
+            </section>
+            <section id="square-buttons">
+              <div class="square-buttons">
+                <h3>Square Buttons</h3>
+                <div class="showcase">
+                  <div class="example-box">
+                    EXAMPLE
+                  </div>
+                  <button class="btn sqr-btn normal">Normal</button>
+                  <button class="btn sqr-btn success">Success</button>
+                  <button class="btn sqr-btn warning">Warning</button>
+                  <button class="btn sqr-btn error">Error</button>
+                </div>
+              </div>
+              <div class="code-sample">
+                <div class="example-box-inverted">
+                  Code
+                </div>
+                <pre>
+                  <code class="language-html">
+                    <span class="tg">&lt;button </span><span class="op">type=</span><span class="q">"button"</span><span class="op"> class=</span><span class="q">"btn sqr-btn normal"</span><span class="tg">&gt;</span><span class="txt">Normal</span><span class="tg">&lt;/button&gt;&lt;/a&gt;</span>
+                    <span class="txt">...</span>
+                    <span class="tg">&lt;button </span><span class="op">type=</span><span class="q">"button"</span><span class="op"> class=</span><span class="q">"btn sqr-btn error"</span><span class="tg">&gt;</span><span class="txt">Error</span><span class="tg">&lt;/button&gt;&lt;/a&gt;</span>
+                  </code>
+                </pre>
+              </div>
+            </section>
           </div>
         </section>
       </div>
-    </section>
-  </div>
-</body>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-<script src="demo-page.js"></script>
+    </body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script src="demo-page.js"></script>
 
-</html>
+    </html>

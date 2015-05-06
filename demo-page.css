@@ -1,4 +1,18 @@
-ul.page-navigation-fixed {
+div.page-navigation-fixed {
   position: fixed;
-  top: 0px;
+  top: 9px;
+
+}
+div.page-navigation {
+  float: left;
+  display: inline;
+  width: 10%;
+}
+
+div.hero-unit-fixed {
+  margin-left: 20%;
+  margin-right: auto;
+  width: 50%;
+  float: left;
+  display: inline;
 }

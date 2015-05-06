@@ -31,10 +31,11 @@ body {
 
 /* Normal hero unit stylin' */
 .hero-unit {
-  margin-left: 20%;
+  margin-left: 10%;
   margin-right: auto;
   width: 50%;
-
+  float: left;
+  display: inline;
 }
 
 /* Typography styles */
