@@ -85,6 +85,10 @@ h6 small {
   font-size: 8px;
 }
 
+p {
+  font-size: 16px;
+}
+
 p.weak {
   font-size: 14px;
   color: #B4B4B4;
@@ -136,17 +140,17 @@ section {
 /* This is to highlight code examples */
 /* Less than and greater than */
 span.tg {
-  color: #86BCFF;
+  color: #BF6E7C;
 }
 
 /* Options */
 span.op {
-  color: #AF9EFF;
+  color: #D49A67;
 }
 
 /* Quotation content */
 span.q {
-  color: #9EFF1D;
+  color: #88B363;
 }
 
 /* Text */
@@ -189,7 +193,7 @@ code.inline-code {
 
 .code-sample {
 
-  background-color: #161719;
+  background-color: #292C33;
 
   width: 100%;
   max-height: 100px;
