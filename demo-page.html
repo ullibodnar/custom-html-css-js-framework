@@ -5,21 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
 
-  <title>Demo Page for Custom Bootstrap</title>
-  <link rel="stylesheet" href="custom-bootstrap.css" type="text/css" />
+  <title>Demo Page for Custom Framework</title>
+  <link rel="stylesheet" href="custom-framework.css" type="text/css" />
   <link rel="stylesheet" href="demo-page.css" type="text/css" />
-
-  <!-- code highlighting -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-  <script>
-  hljs.initHighlightingOnLoad();
-  </script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 
 <body>
   <div id="header" class="header header-normal">
-    <h1>Documentation for Ulli's Custom Bootstrap</h1>
+    <h1>Documentation for Ulli's Custom HTML, CSS, JS Framework</h1>
   </div>
   <div class="page-navigation">
     <ul class="page-navigation-list">
@@ -27,6 +21,7 @@
       <ul>
         <li><a class="side-page-navigation" href="#headings">Headings</a></li>
         <li><a class="side-page-navigation" href="#paragraph-text">Paragraph Text</a></li>
+        <li><a class="side-page-navigation" href="#inline-text-elements">Inline Text Elements</a></li>
       </ul>
       <a class="side-page-navigation" href="#buttons">Buttons</a>
       <ul>
@@ -65,15 +60,13 @@
             </div>
             <pre>
               <code class="language-html">
-                <span class="tg">&lt;h1&gt;</span><span class="txt">h1 Example Header</span><span class="tg">&lt;p </span><span class="op">class=</span><span class="q">"weak"</span><span class="tg">&gt;</span><span class="txt">2.5em/40px*</span><span class="tg">&lt;/p&gt;</span><span class="tg">&lt;/h1&gt;</span>
+                <span class="tg">&lt;h1&gt;</span><span class="txt">h1 Example Header</span><span class="tg">&lt;/h1&gt;</span>
                 <span class="txt">...</span>
-                <span class="tg">&lt;h6&gt;</span><span class="txt">h6 Example Header</span><span class="tg">&lt;p </span><span class="op">class=</span><span class="q">"weak"</span><span class="tg">&gt;</span><span class="txt">0.875em/14px*</span><span class="tg">&lt;/p&gt;</span><span class="tg">&lt;/h6&gt;</span>
+                <span class="tg">&lt;h6&gt;</span><span class="txt">h6 Example Header</span><span class="tg">&lt;/h6&gt;</span>
               </code>
             </pre>
           </div>
-          <p>You can add a secondary header to any heading by using the <code class="inline-code">&lt;small&gt;</code> tag.
-            Or, you can add the <code class="inline-code">.weak</code> class to any <code class="inline-code">&lt;p&gt;</code>
-            tag. The text in the second option is a fixed size as seen in the example above.</p>
+          <p>You can add a secondary header to any heading by using the <code class="inline-code">&lt;small&gt;</code> tag. It is automatically scaled depending on the element it is nested inside.</p>
             <div class="showcase">
               <div class="example-box">
                 EXAMPLE
@@ -89,6 +82,18 @@
               <h5>h5 &bull; Example Header<small class="weak">Sub Header</small></h5>
 
               <h6>h6 &bull; Example Header<small class="weak">Sub Header</small></h6>
+            </div>
+            <div class="code-sample">
+              <div class="example-box-inverted">
+                Code
+              </div>
+              <pre>
+                <code class="language-html">
+                  <span class="tg">&lt;h1&gt;</span><span class="txt">h1 Example Header</span><span class="tg">&lt;small</span><span class="tg">&gt;</span><span class="txt">Sub Header</span><span class="tg">&lt;/small&gt;</span><span class="tg">&lt;/h1&gt;</span>
+                  <span class="txt">...</span>
+                  <span class="tg">&lt;h6&gt;</span><span class="txt">h1 Example Header</span><span class="tg">&lt;small</span><span class="tg">&gt;</span><span class="txt">Sub Header</span><span class="tg">&lt;/small&gt;</span><span class="tg">&lt;/h6&gt;</span>
+                </code>
+              </pre>
             </div>
           </section>
           <section id="paragraph-text">
@@ -114,10 +119,20 @@
                 nobis vidisse adolescens cu vel, cum ad alia alienum assueverit.
               </p>
             </div>
+            <div class="code-sample">
+              <div class="example-box-inverted">
+                Code
+              </div>
+              <pre>
+                <code class="language-html">
+                  <span class="tg">&lt;p&gt;</span><span class="txt">Lorem ipsum...</span><span class="tg">&lt;/p&gt;</span>
+                </code>
+              </pre>
+            </div>
           </section>
           <section id="inline-text-elements">
             <h3>Bold Text</h3>
-            <p>Text can be bolded by using the inline <code class="inline-code">&lt;strong&gt;</code></p>
+            <p>Bold text is used to indicate importance.</p>
             <div class="showcase">
               <div class="example-box">
                 EXAMPLE
@@ -167,6 +182,27 @@
               <pre>
                 <code class="language-html">
                   <span class="tg">&lt;p&gt;</span><span class="txt">Text can be </span><span class="tg">&lt;mark&gt;</span><span class="txt">highlighted</span><span class="tg">&lt;/mark&gt;</span><span class="tg">&lt;p&gt;</span>
+                </code>
+              </pre>
+            </div>
+            <h3>Weak Text</h3>
+            <p>Weak text is for less emphasis. Copyright, notices, etc.</p>
+            <p>Text can be weak by adding the class <code class="inline-code">.weak</code> to any p elemnt.</p>
+            <div class="showcase">
+              <div class="example-box">
+                EXAMPLE
+              </div>
+              <strong>Strong Text</strong>
+              <p>Normal Text</p>
+              <p class="weak">Weak Text</p>
+            </div>
+            <div class="code-sample">
+              <div class="example-box-inverted">
+                Code
+              </div>
+              <pre>
+                <code class="language-html">
+                  <span class="tg">&lt;p</span><span class="op">class=</span><span class="q"><span class="txt">Text can be </span><span class="tg">&lt;mark&gt;</span><span class="txt">highlighted</span><span class="tg">&lt;/mark&gt;</span><span class="tg">&lt;p&gt;</span>
                 </code>
               </pre>
             </div>
