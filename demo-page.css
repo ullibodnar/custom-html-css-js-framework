@@ -6,12 +6,16 @@ div.page-navigation-fixed {
 div.page-navigation {
   float: left;
   display: inline;
-  width: 10%;
+  width: 20%;
 
 }
 
 ul.page-navigation-list ul {
   list-style-type: none;
+}
+
+div.hero-unit {
+  margin-left: 0px;
 }
 
 div.hero-unit-fixed {
