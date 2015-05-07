@@ -7,6 +7,11 @@ div.page-navigation {
   float: left;
   display: inline;
   width: 10%;
+
+}
+
+ul.page-navigation-list ul {
+  list-style-type: none;
 }
 
 div.hero-unit-fixed {
