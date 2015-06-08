@@ -155,9 +155,7 @@ section {
 
   border-radius: 5px;
 
-  -webkit-box-shadow: inset 0px 0px 48px -11px rgba(0,0,0,0.75);
--moz-box-shadow: inset 0px 0px 48px -11px rgba(0,0,0,0.75);
-box-shadow: inset 0px 0px 48px -11px rgba(0,0,0,0.75);
+
 }
 .showcase .example-box {
   color: #B4B4B4;
