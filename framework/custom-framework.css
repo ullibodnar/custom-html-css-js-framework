@@ -12,9 +12,9 @@ body {
 
   height: 60px;
 
-  padding: 10px 5px 5px 5px;
+  padding: 5px;
 
-  margin-bottom: 10px;
+  background-color: #F6F6F6;
 }
 
 .header-normal {
@@ -31,11 +31,18 @@ body {
 
 /* Normal hero unit stylin' */
 .hero-unit {
-  margin-left: 10%;
+  margin-top: 10px;
+  margin-left: 20%;
   margin-right: auto;
   width: 50%;
   float: left;
   display: inline;
+
+  background-color: #F6F6F6;
+
+  padding: 60px;
+
+  border-radius: 10px;
 }
 
 /* Typography styles */
@@ -107,7 +114,7 @@ p.capitalize {
 }
 
 a {
-  color: black;
+  color: rgb(53, 134, 200);
   text-decoration: none;
 }
 
@@ -135,7 +142,7 @@ section {
 
 /* Showcase the example work */
 .showcase {
-  background-color: #F7F7F7;
+  background-color: #D7D7D7;
 
   width: 100%;
 
@@ -147,6 +154,10 @@ section {
   padding-right: 10px;
 
   border-radius: 5px;
+
+  -webkit-box-shadow: inset 0px 0px 48px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 48px -11px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 48px -11px rgba(0,0,0,0.75);
 }
 .showcase .example-box {
   color: #B4B4B4;
@@ -265,6 +276,9 @@ code.inline-code {
 }
 /* darken background color on round buttons on hover */
 .normal.rnd-btn:hover {
+  background-color: rgb(143, 143, 143);
+}
+.confirm.rnd-btn:hover {
   background-color: rgb(45, 103, 152);
 }
 .success.rnd-btn:hover {
@@ -285,6 +299,9 @@ code.inline-code {
   transition: .2s ease;
 }
 .normal.sqr-btn:hover {
+  color: rgb(180, 180, 180);
+}
+.confirm.sqr-btn:hover {
   color: rgb(53, 134, 200);
 }
 .success.sqr-btn:hover {
@@ -296,9 +313,17 @@ code.inline-code {
 .error.sqr-btn:hover {
   color: rgb(205, 77, 72);
 }
+.inverse.sqr-btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
 
 /* colors of buttons */
 .normal {
+  background-color: rgb(180, 180, 180);
+  border: 1px solid rgb(180, 180, 180);
+}
+.confirm {
   background-color: rgb(53, 134, 200);
   border: 1px solid rgb(53, 134, 200);
 }
@@ -313,4 +338,9 @@ code.inline-code {
 .error {
   background-color: rgb(205, 77, 72);
   border: 1px solid rgb(205, 77, 72);
+}
+.inverse {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
 }
